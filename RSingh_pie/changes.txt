@@ -1,0 +1,2 @@
+I implemented the background image and the pie bullet points as my 2 extras.
+On the index page i used images, anchors, a ol, a p, and links.

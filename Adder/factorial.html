@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      <p>Type an integer</p>
+      <input type="text" id="number" size="4">
+      <button type="button" onclick="factorial();" name="button">Calculate factorial</button>
+      <span id="answer"> </span>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function factorial(){
+      var input = document.getElementById("number");
+      var number = parseInt(input.value);
+      var result = 1;
+      for(var i=1;i<=number;i++){
+        result = result*i;
+      }
+      var  span =document.getElementById("answer");
+      span.innerHTML=result;
+    }
+  </script>
+</html>

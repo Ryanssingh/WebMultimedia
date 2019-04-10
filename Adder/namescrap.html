@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      <p>Type your name</p>
+      <div class="">
+        <input type="text" id= "name" size="24" name="" value="">
+        <button type="button" onclick="convertName();" name="button">SWAP</button>
+      </div>
+    </div>
+  </body>
+  <script charset="utf-8">
+    function convertName(){
+      var input = document.getElementById("name");
+      var name = input.value;
+      var spaceindex=name.indexOf(" ");
+      var firstname = name.substring(0,spaceindex);
+      var lastname = name.substring(spaceindex+1);
+      lastname = lastname.toUpperCase();
+      var firstinitial = firstname.charAt(0);
+      input.value = lastname+", "+ firstinitial+".";
+    }
+  </script>
+</html>

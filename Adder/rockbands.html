@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Rock Bands</h1>
+    <p>Type a bands name!</p>
+    <div class="">
+      <input type="text" id="band" size="24"><br>
+      <button onclick="addToList();">Add To List</button>
+      <button onclick="reverseList();">Reverse List</button>
+      <button onclick="clearList();">Clear List</button><br>
+      <span id="list" ></span>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var bandlist = [];
+    function updateList(){
+      var output = document.getElementById("list");
+      output.innerHTML = "["+bandlist.join(", ")+"]";
+    }
+    function addToList(){
+      var input = document.getElementById("band");
+      var bandname = input.value;
+      bandlist.push(bandname);
+      input.value ="";
+      updateList();
+    }
+    function reverseList(){
+      bandlist.reverse();
+      updateList();
+    }
+    function clearList(){
+      bandlist = [];
+      updateList();
+    }
+  </script>
+</html>

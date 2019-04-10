@@ -1,0 +1,28 @@
+body{
+  font-family: "Veranda", "Geneva", sans-serif;
+  font-size: 12pt;
+}
+
+h1{
+  background-color: black;
+  color: white;
+  font-size:2em;
+  text-align: center;
+}
+
+h2,h3{
+  background-color: #336699;
+  color: white;
+}
+
+a{
+  color: #151b54
+  font-weight: bold;
+  text-decoration: none;
+}
+ol, ul{
+  background-color: #cccccc;
+}
+ol{
+  list-style-type: upper-roman;
+}
